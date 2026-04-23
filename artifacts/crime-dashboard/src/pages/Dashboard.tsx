@@ -13,7 +13,7 @@ import { motion } from "framer-motion";
 const MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 
 export default function Dashboard() {
-  const rawData = useMemo(() => generateData(1200), []);
+  const rawData = useMemo(() => generateData(), []);
 
   const [cityFilter, setCityFilter] = useState("All");
   const [monthFilter, setMonthFilter] = useState("All");
